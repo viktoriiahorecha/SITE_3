@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <style> 
+        body {
+            font-family:  serif, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+        background-color:rgb(183, 169, 229);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        
+        }
+        nav {
+         background-color:rgb(183, 169, 229);
+         color: white;
+         text-align: center;
+         padding: 10px;
+        }
+        nav a {
+         color: white;
+         text-decoration: none;
+         padding: 10px;
+        }
+        section {
+         padding: 20px;
+        }
+        table {
+            width: 100%;
+            
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+             background-color: rgb(153, 128, 235);
+            color: white;
+        }
+        footer {
+             background-color: rgb(144, 129, 194);
+             color: white;
+             text-align: center;
+            padding: 8px;
+        }
+        a {
+            text-decoration:none;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Moja strona</h1>
+    <p>Viktoriia Horecha</p>
+    </header>
+    <nav>
+    <a href="http://zsdios.pl/">Technikum</a>
+    </nav>
+    <section>
+        <table>
+            <tbody>
+                <caption><b>Kierunki kształcenia w Technikum im. Jana Zamojskiego w Zwierzyńcu:</b></caption>
+              
+                <br></br>
+             
+            <tr>
+                <th></th><th>Kierunek kształcenia</th><th>Czas nauki</th></tr>
+            <tr><th>1</th><th>
+                <a href="http://zsdios.pl/page/221/technik-programista.html">Technik programista</a></th><th>5 lat</th></tr>
+            <tr>
+                <th>2</th><th>
+                <a href="http://zsdios.pl/page/98/technik-informatyk.html">Technik informatyk</a></th><th>5 lat</th></tr>
+            <tr>
+                <th>3</th><th>
+                <a  href="http://zsdios.pl/page/43/technik-geodeta.html">Technik geodeta</a></th><th>5 lat</th></tr>
+            <tr>
+                <th>4</th><th>
+                    <a  href="http://zsdios.pl/page/41/technik-ochrony-srodowiska.html">Technik ochrony środowiska</a></th><th>5 lat</th></tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <p>
+            "Data: "
+            <span id="currentDate">25.09.2023</span>
+        </p>
+    </footer>
+    <script>
+        const currentDateElement = document.getElementById("currentDate");
+        const currentDate = new Date();
+        currentDateElement.textContent = currentDate.toLocaleDateString();
+    </script>
+</body>
+</html>
